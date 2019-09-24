@@ -21,6 +21,12 @@
       {{ end }}
     </div>
 
+    {{ with .Params.author }}
+    <div class="author">
+      <strong aria-hidden="true">Author: </strong>{{ . }}
+    </div>
+    {{ end }}
+
     {{ with .Params.tags }}
       <div class="tags">
         <strong aria-hidden="true">Tags: </strong>
